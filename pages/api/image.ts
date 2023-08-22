@@ -61,7 +61,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       // Sending Status to frontend
       res.status(201).send({ message: "image is added", data: newImage })
     } catch (error: any) {
-      res.status(400).send({ message: error.message })
+      res.status(400).send({ message: error })
 
     }
   }
